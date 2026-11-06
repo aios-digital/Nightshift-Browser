@@ -1,0 +1,84 @@
+.strip {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: var(--ns-tab-strip-h);
+  padding: 0 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.strip::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  flex: 0 1 140px;
+  min-width: 56px;
+  height: 22px;
+  border-radius: var(--ns-radius-control);
+  color: var(--ns-haze);
+  transition: background var(--ns-motion-fast) var(--ns-ease), color var(--ns-motion-fast) var(--ns-ease);
+}
+
+.tab:hover,
+.active {
+  background: var(--ns-dusk-raised);
+  color: var(--ns-moon);
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding-inline: 8px 2px;
+  text-align: start;
+  font-size: var(--ns-fs-xs);
+}
+
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.favicon {
+  flex: none;
+  border-radius: 3px;
+}
+
+.close,
+.add {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--ns-radius-control);
+  color: var(--ns-haze);
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+  margin-inline-end: 3px;
+  opacity: 0;
+}
+
+.tab:hover .close,
+.active .close,
+.close:focus-visible {
+  opacity: 1;
+}
+
+.close:hover,
+.add:hover {
+  background: var(--ns-line);
+  color: var(--ns-moon);
+}

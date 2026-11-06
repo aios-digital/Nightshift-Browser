@@ -1,0 +1,28 @@
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-end: -8px;
+  width: 8px;
+  cursor: col-resize;
+  z-index: 2;
+}
+
+.handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  inset-inline-start: 2px;
+  width: 4px;
+  height: 36px;
+  margin-top: -18px;
+  border-radius: 2px;
+  background: var(--ns-line);
+  opacity: 0;
+  transition: opacity var(--ns-motion-fast) var(--ns-ease);
+}
+
+.handle:hover::after,
+.handle:focus-visible::after {
+  opacity: 1;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "nightshift-browser",
+  "version": "0.1.0",
+  "description": "NightShift Browser: an AI-powered, open-source, free card-based desktop browser",
+  "main": "./out/main/index.js",
+  "author": "NightShift",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:smoke": "node scripts/dev-smoke.mjs",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "build:e2e": "electron-vite build --mode e2e",
+    "test:e2e": "npm run build:e2e && playwright test"
+  },
+  "dependencies": {
+    "@fontsource/bricolage-grotesque": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "fractional-indexing": "^4.0.0",
+    "framer-motion": "^14.9.1",
+    "i18next": "^26.7.2",
+    "mobx": "^7.1.4",
+    "mobx-react-lite": "^5.1.2",
+    "mobx-state-tree": "^9.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^17.1.13",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "1.64",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.2.1",
+    "@vitest/coverage-v8": "^5.1.0",
+    "electron": "^45.2.3",
+    "electron-vite": "^6.0.0",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "happy-dom": "^21.0.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aios-digital/Nightshift-Browser.git"
+  },
+  "homepage": "https://github.com/aios-digital/Nightshift-Browser"
+}

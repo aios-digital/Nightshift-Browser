@@ -1,0 +1,46 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  height: var(--ns-app-bar-h);
+  background: var(--ns-night);
+  border-bottom: 1px solid var(--ns-line);
+  /* Windows caption buttons stay on the physical right in both directions, so use physical padding. */
+  padding-left: 12px;
+  padding-right: var(--ns-caption-w);
+  -webkit-app-region: drag;
+}
+
+.owl {
+  flex: none;
+}
+
+.name {
+  font-family: var(--ns-font-display);
+  font-weight: 700;
+  font-size: var(--ns-fs-sm);
+  letter-spacing: 0.12em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: var(--ns-radius-control);
+  color: var(--ns-haze);
+  font-size: var(--ns-fs-sm);
+  -webkit-app-region: no-drag;
+  transition: background var(--ns-motion-fast) var(--ns-ease), color var(--ns-motion-fast) var(--ns-ease);
+}
+
+.action:hover {
+  background: var(--ns-dusk-raised);
+  color: var(--ns-moon);
+}

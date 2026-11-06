@@ -1,0 +1,24 @@
+.input {
+  flex: 1;
+  min-width: 0;
+  height: 24px;
+  padding: 0 8px;
+  background: var(--ns-night-deep);
+  border: 1px solid var(--ns-line);
+  border-radius: var(--ns-radius-control);
+  color: var(--ns-moon);
+  font-size: var(--ns-fs-sm);
+  font-family: var(--ns-font-body);
+  user-select: text;
+  transition: border-color var(--ns-motion-fast) var(--ns-ease);
+}
+
+.input::placeholder {
+  color: var(--ns-haze-dim);
+}
+
+.input:focus {
+  outline: 2px solid var(--ns-sodium);
+  outline-offset: 0;
+  border-color: transparent;
+}

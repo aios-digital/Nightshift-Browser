@@ -1,0 +1,47 @@
+{
+  "app": { "name": "NightShift" },
+  "appBar": {
+    "language": "العربية",
+    "languageLabel": "Switch language to Arabic",
+    "newCard": "New card"
+  },
+  "card": {
+    "new": "New card",
+    "close": "Close card",
+    "maximize": "Maximize card",
+    "restore": "Restore card size",
+    "sleep": "Put card to sleep",
+    "wake": "Wake card",
+    "sleeping": "This card is asleep.",
+    "resize": "Resize card"
+  },
+  "tab": {
+    "new": "New tab",
+    "close": "Close tab",
+    "untitled": "New tab"
+  },
+  "nav": {
+    "back": "Back",
+    "forward": "Forward",
+    "reload": "Reload",
+    "stop": "Stop"
+  },
+  "omnibox": {
+    "label": "Address or search",
+    "placeholder": "Search or type an address"
+  },
+  "errors": {
+    "title": "This page didn't open",
+    "retry": "Try again",
+    "dns": "We can't find that site. Check the address and try again.",
+    "refused": "That site isn't answering. It may be down.",
+    "timeout": "That site took too long to answer.",
+    "offline": "You're offline. Check your connection and try again.",
+    "cert": "This site's security certificate isn't safe, so we stopped. You can't continue from here.",
+    "generic": "This page didn't load."
+  },
+  "empty": {
+    "title": "No cards yet",
+    "action": "Open a card"
+  }
+}

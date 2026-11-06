@@ -1,0 +1,39 @@
+.error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  text-align: center;
+  background: var(--ns-night-deep);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--ns-font-display);
+  font-size: var(--ns-fs-xl);
+  font-weight: 700;
+}
+
+.message {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--ns-haze);
+  font-size: var(--ns-fs-md);
+  line-height: 1.5;
+}
+
+.retry {
+  padding: 6px 16px;
+  border: 1px solid var(--ns-line);
+  border-radius: var(--ns-radius-control);
+  background: var(--ns-dusk-raised);
+  transition: background var(--ns-motion-fast) var(--ns-ease);
+}
+
+.retry:hover {
+  background: var(--ns-line);
+}

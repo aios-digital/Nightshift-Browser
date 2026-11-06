@@ -1,0 +1,54 @@
+:root {
+  /* Surfaces */
+  --ns-night: #0e1530;
+  --ns-night-deep: #0a1026;
+  --ns-dusk: #18224a;
+  --ns-dusk-raised: #1f2b5a;
+  --ns-line: #2b3870;
+
+  /* Text */
+  --ns-moon: #e8ecf8;
+  --ns-haze: #8f9bc6;
+  --ns-haze-dim: #6873a1;
+
+  /* Accents */
+  --ns-owl: #e47591; /* logo only */
+  --ns-sodium: #ffb547; /* focus ring, active card outline, loading */
+
+  /* Status: one meaning each */
+  --ns-running: #ffb547;
+  --ns-needs-you: #ff8fa3;
+  --ns-done: #7fd4c1;
+  --ns-failed: #ff6b5b;
+
+  /* Shape */
+  --ns-radius-control: 6px;
+  --ns-radius-card: 12px;
+
+  /* Motion: ease-out, never bouncy */
+  --ns-motion-fast: 120ms;
+  --ns-motion-base: 180ms;
+  --ns-motion-slow: 250ms;
+  --ns-motion-progress: 400ms;
+  --ns-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Type scale */
+  --ns-fs-xs: 0.8rem;
+  --ns-fs-sm: 0.9rem;
+  --ns-fs-md: 1rem;
+  --ns-fs-lg: 1.25rem;
+  --ns-fs-xl: 1.563rem;
+  --ns-fs-2xl: 2.441rem;
+
+  /* Fonts */
+  --ns-font-display: 'Bricolage Grotesque', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --ns-font-body: 'IBM Plex Sans', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --ns-font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Layout */
+  --ns-app-bar-h: 40px;
+  --ns-card-bar-h: 34px;
+  --ns-tab-strip-h: 28px;
+  --ns-caption-w: 138px; /* Windows caption buttons, always on the physical right */
+  --ns-card-min-w: 300px;
+}

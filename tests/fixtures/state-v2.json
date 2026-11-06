@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "spaces": [
+    {
+      "id": "sp1", "index": "a0", "name": "Work", "emoji": "💼", "defaultProfileId": "default",
+      "stacks": [
+        {
+          "id": "st1", "index": "a0",
+          "cards": [
+            {
+              "id": "c1", "index": "a0", "kind": "web", "width": 900, "isMaximized": false, "isSleeping": true,
+              "profileId": "default", "soundMuted": false, "isDeleted": false, "deletedAt": null,
+              "createdAt": 1000, "lastActiveAt": 2000,
+              "tabs": [
+                { "id": "t1", "index": "a0", "url": "https://example.com/", "title": "Example",
+                  "favicon": "https://example.com/favicon.ico",
+                  "customName": null, "customEmoji": null, "isDeleted": false, "openerTabId": null, "createdAt": 1000 },
+                { "id": "t2", "index": "a1", "url": "https://example.org/", "title": "Org", "favicon": null,
+                  "customName": "Mine", "customEmoji": null, "isDeleted": false, "openerTabId": "t1", "createdAt": 1100 }
+              ],
+              "activeTabId": "t1", "pinnedTabId": null
+            }
+          ]
+        }
+      ],
+      "activeCardId": "c1", "isArchived": false, "lastActiveAt": 2000
+    }
+  ],
+  "profiles": [{ "id": "default", "name": "Default" }],
+  "ui": { "locale": "ar", "searchEngine": "https://www.google.com/search?q=%s", "activeSpaceId": "sp1" },
+  "flags": {}
+}
